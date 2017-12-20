@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="{{url_for('submit')}}" method="post">
+
+    <font color="white">Faculty:<br/></font><select name="faculty">
+    <option value="Arts">Arts</option>
+    <option value="Business and Economics">Business and Economics</option>
+    <option value="Engineering">Engineering</option>
+    <option value="Information Technology">IT</option>
+    <option value="Law">Law</option>
+    <option value="Medicine, Nursing and Health Sciences">Medicine, Nursing and Health Sciences</option>
+</select>
+    <br/>
+    <br/>
+    <font color="white">Are you experiencing any financial difficulties ?</font><br/><select name="Equity">
+    <option value='equity'>Yes</option>
+    <option value="True">No</option>
+</select>
+    <br/>
+    <br/>
+    <font color="white">Do you consider yourself a high achiever ?</font><br/><select name="Merit">
+    <option value='merit-academic-achievement'>Yes</option>
+    <option value="True">No</option>
+</select>
+    <br/>
+    <br/>
+    <font color="white">Are you involved in any leadership activities ?</font><br/><select name="Leadership">
+    <option value='Leadership'>Yes</option>
+    <option value="True">No</option>
+</select>
+    <br/>
+    <br/>
+    <font color="white">Are you planning to go on placement ?</font><br/><select name="Placement">
+    <option value='travel-placement',>Yes</option>
+    <option value="True">No</option>
+</select>
+    <input type="submit"/>
+</form>
+
+{% endblock %}

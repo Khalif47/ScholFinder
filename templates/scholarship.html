@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% for item in lists %}
+{{item["scholarship"]}}     ${{item["money"]}}
+<br/>
+{% endfor %}
+<br/>
+<br/>
+<font color="white">The total value of your potential scholarship is $ {{sum}}</font>
+{% endblock %}
